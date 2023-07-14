@@ -240,6 +240,8 @@ static int image_pecoff_parse(struct image *image)
 	case IMAGE_FILE_MACHINE_AMD64:
 	case IMAGE_FILE_MACHINE_AARCH64:
 	case IMAGE_FILE_MACHINE_RISCV64:
+	case IMAGE_FILE_MACHINE_LOONGARCH64:
+	case IMAGE_FILE_MACHINE_R4000:
 		rc = image_pecoff_parse_64(image);
 		break;
 	case IMAGE_FILE_MACHINE_I386:
